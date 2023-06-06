@@ -17,6 +17,7 @@
     flameshot
     discord
     google-chrome
+    etcher
   ];
 
   # This value determines the Home Manager release that your

@@ -82,6 +82,13 @@
      wget
    ];
 
+  # Permit the use of certain insecure pkgs. For NUR pkgs this line can be seen in nur-config.nix .
+  nixpkgs.config.permittedInsecurePackages = [
+     "electron-12.2.3"
+     "openssl-1.1.1u"
+     "electron-19.0.7"
+   ];
+
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
   # programs.mtr.enable = true;
